@@ -251,6 +251,7 @@ main nav a {
   color: #e4bb23;
   font-size: 20px;
   text-transform: uppercase;
+  margin: 20px 0;
 }
 
 .play i {
@@ -274,7 +275,6 @@ main nav a {
   font-size: 12px;
   color:#e4bb23
 }
-
 
 .movie-info ul {
   margin: 10px 0;
