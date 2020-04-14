@@ -8,14 +8,24 @@
 body {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   font-family: Montserrat, sans-serif;
 }
 
-#container {
+.container {
   display: flex;
   flex-flow: column;
   justify-content: center;
-  width: 70%;
+  width: 50%;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 798px;
+  background-image: url("../img/capa-madmax2.jpg");
+  padding-top: 19px;
 }
 
 nav {
@@ -37,9 +47,8 @@ a {
 }
 
 #main-nav {
-  background-color: red;
+  background-color: transparent;
   height: 48px;
-  margin-top: 20px;
   justify-content: space-between;
   align-items: center;
 }
@@ -54,11 +63,13 @@ a {
 text-transform: uppercase;
 }
 
-
 #main-nav li {
   padding: 25px;
 }
 
+#main-nav li:hover a {
+  color: #e4bb23;
+}
 #user {
   width: 151px;
   display: flex;
@@ -70,3 +81,4 @@ text-transform: uppercase;
   width: 45px;
   border-radius: 100%;
 }
+
