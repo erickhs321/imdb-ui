@@ -135,6 +135,7 @@ header .container > div a {
   font-size: 13px;
   color: #fff;
   text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
 }
 
 button {
@@ -199,7 +200,8 @@ main nav a {
   font-size: 13px;
   font-weight: bold;
   text-transform: uppercase;
-  color: #e4bb23
+  color: #e4bb23;
+  transition: all 0.2s ease-in-out;
 }
 
 #movies-container ul {
@@ -212,7 +214,7 @@ main nav a {
   background-color: #fff;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.18);
   margin-bottom: 30px;
   flex: 24%;
   margin-right: 9px;
@@ -302,4 +304,43 @@ main nav a {
 .movie-info span {
   font-size: 20px;
   font-weight: bold;
+}
+
+footer {
+  margin-top: 35px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+
+#social-networks {
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+}
+
+#social-networks i {
+  font-size: 25px;
+  color: #bababa;
+  padding: 20px;
+}
+
+#social-networks i:last-of-type {
+  font-size: 25px;
+  color: #bababa;
+  padding-right: 15px;
+}
+
+#social-networks .twitter-icon:hover i {
+  color: #55acee;
+}
+
+#social-networks .facebook-icon:hover i {
+  color: #3b5998;;
+}
+
+#social-networks .instagram-icon:hover i {
+  color: #e95950;
 }
