@@ -52,10 +52,13 @@ nav {
 }
 
 nav ul {
-  list-style: none;
   display: flex;
   padding: 0;
   margin: 0;
+}
+
+ul {
+  list-style: none;
 }
 
 a {
@@ -193,4 +196,65 @@ main nav a {
   font-weight: bold;
   text-transform: uppercase;
   color: #e4bb23
+}
+
+#movies-container ul {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 0;
+}
+
+#movies-container > ul > li  {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+  flex: 24%;
+  margin-right: 9px;
+}
+
+#movies-container figure  {
+  margin: 0;
+  position: relative;
+}
+
+#movies-container img  {
+  border-radius: 8px;
+  width: 100%
+}
+
+#movies-container figure .play {
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  position: absolute;
+  top: 0;
+  left:0;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+}
+
+#movies-container figure:hover .play {
+ opacity: 1;
+}
+
+.play h3 {
+  color: #e4bb23;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.play i {
+  color: #fff;
+  font-size: 50px;
+}
+
+.play i:hover {
+  color: #e4bb23;
 }
