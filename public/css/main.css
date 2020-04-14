@@ -6,13 +6,11 @@
 }
 
 body {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
   font-family: Montserrat, sans-serif;
 }
 
 .container {
+  margin: 0 auto;
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -170,4 +168,29 @@ button i {
 
 #release-date span {
   color: #bc9a1d
+}
+
+main nav ul {
+  width: 100%;
+  height: 67px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.13);
+}
+
+main nav li {
+  margin: 0 20px;
+}
+
+main nav a:hover {
+  border-bottom: 1px solid #e4bb23;
+}
+
+main nav a {
+  padding: 25px 0;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #e4bb23
 }
