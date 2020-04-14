@@ -2,5 +2,71 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  font-family: Montserrat, sans-serif;
+}
+
+#container {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  width: 70%;
+}
+
+nav {
+  display: flex;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+#main-nav {
+  background-color: red;
+  height: 48px;
+  margin-top: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#main-nav a, #main-nav span {
+  font-size: 13px;
+  color: #fff;
+  font-weight: 700;
+}
+
+#main-nav a {
+text-transform: uppercase;
+}
+
+
+#main-nav li {
+  padding: 25px;
+}
+
+#user {
+  width: 151px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#user img {
+  width: 45px;
+  border-radius: 100%;
 }
