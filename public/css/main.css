@@ -16,16 +16,37 @@ body {
   display: flex;
   flex-flow: column;
   justify-content: center;
-  width: 50%;
+  width: 960px;
 }
 
 header {
+  background-attachment: fixed;
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  height: 798px;
+  height: 90vh;
   background-image: url("../img/capa-madmax2.jpg");
   padding-top: 19px;
+  padding-bottom: 32px;
+  background-size: cover;
+}
+
+header:after {
+  background: linear-gradient( 0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 212, 255, 0) 75% );
+  content: "";
+  height: 90vh;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+header .container {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  height: 100%;
+  z-index: 1;
 }
 
 nav {
@@ -35,6 +56,8 @@ nav {
 nav ul {
   list-style: none;
   display: flex;
+  padding: 0;
+  margin: 0;
 }
 
 a {
@@ -42,6 +65,7 @@ a {
 }
 
 .logo {
+  cursor: pointer;
   display: flex;
   align-items: center;
 }
@@ -64,12 +88,14 @@ text-transform: uppercase;
 }
 
 #main-nav li {
-  padding: 25px;
+  padding: 23px;
 }
 
-#main-nav li:hover a {
+.container #main-nav li:hover a, .container > div li:hover a  {
   color: #e4bb23;
+  transition: all 0.2s ease-in-out;
 }
+
 #user {
   width: 151px;
   display: flex;
@@ -82,3 +108,66 @@ text-transform: uppercase;
   border-radius: 100%;
 }
 
+h2 {
+  font-size: 65px;
+  color: #fff;
+  font-weight: bold;
+  line-height: 1.2em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+header .container > div nav {
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+header .container > div li {
+  margin-right: 15px;
+}
+
+header .container > div a {
+  font-size: 13px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  border: none;
+  padding: 15px 50px;
+  padding-right: 15px;
+  border-radius: 40px;
+  display: flex;
+  text-transform: capitalize;
+  background-color: #e4bb23;
+  font-size: 15px;
+}
+
+button:hover {
+  background-color: #bc9a1d;
+}
+
+button i {
+  margin-left: 10px;
+  display: inline-block;
+}
+
+.fa-play-circle-o {
+  margin-top: -5px;
+  font-size: 23px;
+}
+
+#release-date {
+  padding: 20px 0;
+  font-size: 14px;
+}
+
+#release-date p {
+  color: #fff
+}
+
+#release-date span {
+  color: #bc9a1d
+}
