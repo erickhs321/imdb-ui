@@ -7,6 +7,7 @@
 
 body {
   font-family: Montserrat, sans-serif;
+  min-width: 1000px;
 }
 
 .container {
@@ -14,7 +15,7 @@ body {
   display: flex;
   flex-flow: column;
   justify-content: center;
-  width: 960px;
+  padding: 0 2%
 }
 
 header {
@@ -220,6 +221,13 @@ main nav a {
   margin-right: 9px;
 }
 
+
+#movies-container > ul > li:nth-of-type(4),
+#movies-container > ul > li:nth-of-type(8),
+#movies-container > ul > li:nth-of-type(12) {
+  margin-right: 0px;
+}
+
 #movies-container figure  {
   margin: 0;
   position: relative;
@@ -343,4 +351,53 @@ footer {
 
 #social-networks .instagram-icon:hover i {
   color: #e95950;
+}
+
+@media (max-width: 749px){
+  header {
+    background-size: contain;
+    height: 78vh;
+  }
+  header h2 {
+    font-size: 45px;
+  }
+  header:after
+  {
+    width: 1000px;
+    height: 78vh;
+  }
+}
+
+@media (min-height: 800px) and (max-width: 1024px) {
+  header {
+    background-size: contain;
+    height: 60vh;
+  }
+  header h2 {
+    font-size: 45px;
+  }
+  header:after
+  {
+    width: 1000px;
+    height: 60vh;
+  }
+
+}
+
+@media (min-height: 1200px) and (max-width: 1200px) {
+  header {
+    background-size: contain;
+    height: 45vh;
+    width: 100%;
+  }
+  header h2 {
+    font-size: 45px;
+  }
+  header:after
+  {
+    width: 1000px;
+    height: 45vh;
+    width: 100%;
+  }
+
 }
