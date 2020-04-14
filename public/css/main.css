@@ -118,6 +118,10 @@ h2 {
   margin: 0;
 }
 
+h3 {
+  margin:0;
+}
+
 header .container > div nav {
   margin-top: 15px;
   margin-bottom: 30px;
@@ -207,6 +211,7 @@ main nav a {
 #movies-container > ul > li  {
   background-color: #fff;
   border-radius: 8px;
+  overflow: hidden;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   margin-bottom: 30px;
   flex: 24%;
@@ -219,14 +224,12 @@ main nav a {
 }
 
 #movies-container img  {
-  border-radius: 8px;
-  width: 100%
+  width: 100%;
 }
 
 #movies-container figure .play {
   display: flex;
   align-items: center;
-  border-radius: 8px;
   position: absolute;
   top: 0;
   left:0;
@@ -257,4 +260,46 @@ main nav a {
 
 .play i:hover {
   color: #e4bb23;
+}
+
+.movie-info {
+  padding: 10px
+}
+
+.movie-info h3 {
+  font-size: 13px;
+}
+
+.movie-info a {
+  font-size: 12px;
+  color:#e4bb23
+}
+
+
+.movie-info ul {
+  margin: 10px 0;
+}
+
+.movie-info a:hover {
+  text-decoration: underline;
+}
+
+.movie-info > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.movie-info i {
+  font-size: 20px;
+  color: #ccc;
+}
+
+.movie-info i:hover {
+  color: #e74c3c;
+  cursor: pointer;
+}
+
+.movie-info span {
+  font-size: 20px;
+  font-weight: bold;
 }
